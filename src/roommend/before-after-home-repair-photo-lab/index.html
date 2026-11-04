@@ -65,6 +65,8 @@
         projects.forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.project===project)));
         stages.forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.stage===stage)));
       }
+      const output=el('resultLabel').parentElement;if(output)output.id='photoPlanOutput';
+      [...projects,...stages].forEach(b=>b.setAttribute('aria-controls','photoPlanOutput'));
       projects.forEach(b=>b.addEventListener('click',()=>{project=b.dataset.project;render()}));
       stages.forEach(b=>b.addEventListener('click',()=>{stage=b.dataset.stage;render()}));
       el('reset').addEventListener('click',()=>{project='threshold';stage='before';render();projects[0].focus()});
