@@ -1,0 +1,23 @@
+{
+ "name": "Ready Home Family",
+ "tagline": "Emergency plans, safer rooms and after-school learning for busy households",
+ "baseUrl": "https://ready-home-family.pages.dev",
+ "indexNowKey": "06eb9b315f4846cfbe21b8592eb17399",
+ "apps": [
+  {
+   "slug": "family-ready",
+   "name": "Family Ready: Emergency Plan",
+   "id": 6792019825
+  },
+  {
+   "slug": "roommend",
+   "name": "RoomMend: Safer Home Plans",
+   "id": 6820106548
+  },
+  {
+   "slug": "brainy-bucks",
+   "name": "Brainy Bucks: Math & Reading",
+   "id": 6788619891
+  }
+ ]
+}
