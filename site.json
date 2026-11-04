@@ -1,8 +1,8 @@
 {
- "name": "Ready Home Family",
- "tagline": "Emergency plans, safer rooms and after-school learning for busy households",
- "baseUrl": "https://udrwu9c0tjuedqy2.github.io/hla-home",
- "indexNowKey": "06eb9b315f4846cfbe21b8592eb17399",
+ "name": "Ready Home & Family",
+ "tagline": "Emergency plans, home safety checklists and learning practice for families.",
+ "baseUrl": "https://family-ready-home.pages.dev",
+ "indexNowKey": "025ffcf8da499db6c1ec26451e87b596",
  "apps": [
   {
    "slug": "family-ready",

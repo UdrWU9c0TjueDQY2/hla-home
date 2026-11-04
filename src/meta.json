@@ -1,14 +1,15 @@
 {
- "title": "Ready Home Family | Free iPhone apps by Honest Little Apps",
- "linkText": "Ready Home Family",
- "description": "Emergency plans, safer rooms and after-school learning for busy households",
+ "title": "Ready Home & Family \u00b7 Honest Little Apps",
+ "linkText": "Ready Home & Family",
+ "description": "Emergency plans, home safety checklists and learning practice for families.",
  "appSlug": "hub",
  "strategy": "hub-home",
- "query": "ready home family",
+ "query": "ready home & family",
  "tags": [
   "home"
  ],
- "published": "2026-11-04",
- "agent": "hla-0d020d",
+ "published": "2026-11-03",
+ "updated": "2026-11-03",
+ "agent": "hla-34ca5c",
  "draft": true
 }
