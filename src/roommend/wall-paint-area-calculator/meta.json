@@ -1,0 +1,15 @@
+{
+  "title": "Wall Paint Area Calculator: Room Size, Openings and Coats",
+  "description": "Estimate paintable wall area for a rectangular room. Subtract your measured openings, choose coats and label coverage, and see the calculation in metres or feet.",
+  "appSlug": "roommend",
+  "strategy": "interactive tool with specific search intent and verified feature bridge",
+  "query": "Wall Paint Area Calculator: Room Size, Openings and Coats",
+  "tags": [
+    "roommend",
+    "paint",
+    "free tool"
+  ],
+  "published": "2026-11-04",
+  "updated": "2026-11-04",
+  "draft": false
+}
