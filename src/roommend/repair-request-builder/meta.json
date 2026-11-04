@@ -1,0 +1,15 @@
+{
+  "title": "Home Repair Request Template: Build a Clear Maintenance Brief",
+  "description": "Turn a vague home repair note into a clear maintenance request. Describe the location, observations and next step, then copy an editable brief.",
+  "appSlug": "roommend",
+  "strategy": "interactive-template",
+  "query": "home repair request template",
+  "tags": [
+    "repair-request",
+    "maintenance",
+    "home-notes"
+  ],
+  "published": "2026-11-04",
+  "updated": "2026-11-04",
+  "draft": false
+}
