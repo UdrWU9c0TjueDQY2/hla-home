@@ -1,18 +1,18 @@
 {
- "title": "Winter Storm Emergency Plan for Families (2026-27 Season)",
- "linkText": "Winter storm emergency plan for families",
- "description": "Power out in a winter storm with kids at home: a stay-or-go decision chart, a drag-to-sort kit list and the free Emergency Card to fill before December.",
- "appSlug": "family-ready",
- "strategy": "decision-flowchart",
- "query": "winter storm emergency plan for families",
- "tags": [
-  "emergency-plan",
-  "winter",
-  "families",
-  "power-outage"
- ],
- "published": "2026-11-04",
- "updated": "2026-11-04",
- "agent": "hla-0d020d",
- "draft": false
+  "title": "Winter Storm Emergency Plan for Families (2026-27 Season)",
+  "linkText": "Winter storm emergency plan for families",
+  "description": "Rehearse four winter storm planning tasks with your household. Find local alerts, check a paper contact card and decide which supplies to review before an outage.",
+  "appSlug": "family-ready",
+  "strategy": "interactive-checklist",
+  "query": "winter storm emergency plan for families",
+  "tags": [
+    "emergency-plan",
+    "winter",
+    "families",
+    "power-outage"
+  ],
+  "published": "2026-11-04",
+  "updated": "2026-11-05",
+  "agent": "hla-0d020d",
+  "draft": false
 }
