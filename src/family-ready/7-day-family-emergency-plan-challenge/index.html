@@ -66,7 +66,7 @@ ul{padding-left:20px}li{margin:.3em 0}
 @media (max-width:600px){.halftone{display:none}}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
 
-</style>
+.relay{border:2px solid #36403b;border-radius:12px;padding:clamp(16px,3vw,30px);margin:32px 0;background:#fff;color:#232b27}.relay [hidden]{display:none!important}.relay p{max-width:68ch}.relay blockquote{margin:14px 0;padding:18px;background:#eff3e9;border-left:5px solid #59713b;font-size:1.2rem}.relay select,.relay button{font:inherit;padding:10px 14px;min-height:44px;border:1px solid #66755a;border-radius:5px;max-width:100%}.relay button{background:#293a2b;color:white;cursor:pointer}.relay label,.relay select{display:block;margin:.65em 0}.relay select{width:min(100%,28rem);color:#232b27;background:white}.relay-label,.relay-note{font-size:.9rem}.relay-note{border-top:1px solid #c7cebf;padding-top:14px}.relay :focus-visible{outline:3px solid #8f490a;outline-offset:3px}.hero .relay-jump{display:inline-block;padding:8px 0;color:inherit;text-decoration:underline}</style>
 </head>
 
 <body>
@@ -77,6 +77,7 @@ ul{padding-left:20px}li{margin:.3em 0}
 <span class="eyebrow">7-day family emergency plan challenge · built for a house you just moved into</span>
 <h1>7 days to a plan <span>your family can actually find.</span></h1>
 <p class="lede">One 20-minute task a day for a week, a free printable tracker, and an Emergency Card that opens offline. No subscription needed for any of it.</p>
+<p><a class="relay-jump" href="#message-rehearsal">Practice a two-person check-in ↓</a></p>
 <a class="badge" href="https://apps.apple.com/app/id6792019825?ct=home-7-day-family-emergency-pl&mt=8" rel="noopener"><img src="https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/black/en-us?releaseDate=1751500800" alt="Download Family Ready: Emergency Plan on the App Store" width="150" height="50"><span>Download free on the App Store</span></a>
 
 <section class="sorter" aria-labelledby="sort-h">
@@ -96,6 +97,27 @@ ul{padding-left:20px}li{margin:.3em 0}
 <ol class="plan" id="plan"><li><h3>Find the shutoffs</h3><p>Walk the house with your phone&#x27;s flashlight: water main, gas valve, electrical panel. Photograph each and note the tool you need (many gas valves need a wrench). New-home day one, because nobody else knows where they are either.</p><span class="done">Done when: Water main, gas valve, breaker panel located and photographed</span></li><li><h3>Contacts and two meeting places</h3><p>Pick an out-of-area contact everyone texts if local lines are jammed, one meeting place outside the home (the mailbox, a neighbour&#x27;s drive) and one outside the neighbourhood (a school, a library). Write the addresses, not just the names.</p><span class="done">Done when: Out-of-area contact + two meeting places written down</span></li><li><h3>Emergency Card</h3><p>Who to call first, allergies, current medications, important conditions. In Family Ready the card is free, saved on the iPhone, and opens in Emergency Mode without internet once the phone is unlocked. Make one per person, with permission.</p><span class="done">Done when: An Emergency Card for each person in the house</span></li><li><h3>Documents in one place</h3><p>Insurance policy numbers, ID copies, deeds or lease, vet records, a recent photo of each person and pet. Paper copies in a sealed bag; digital copies in an encrypted backup you can restore elsewhere.</p><span class="done">Done when: Document list made; copies stored in two places</span></li><li><h3>The 72-hour kit</h3><p>Ready.gov&#x27;s baseline: one gallon of water per person per day for several days, a several-day supply of non-perishable food, flashlight, first-aid kit, extra batteries, a whistle, medications, phone chargers. Tick what you own; buy only the gaps.</p><span class="done">Done when: Kit checklist ticked; gaps on a shopping list</span></li><li><h3>Pets, dependants, neighbours</h3><p>Carrier, leash and food for each pet; care instructions for anyone who depends on you; one neighbour who has a key and your number. Knock on the door today. It is the whole reason you moved to a street.</p><span class="done">Done when: Pet and dependant notes done; one neighbour knows you</span></li><li><h3>Walk it, then set the review</h3><p>Do a ten-minute drill: everyone finds the shutoffs and names the meeting place. Then pick a review schedule, 3, 6 or 12 months, and put the date on the fridge and in the app.</p><span class="done">Done when: Drill done; review date set</span></li></ol>
 </section>
 
+<section id="message-rehearsal" class="relay" aria-labelledby="relay-title">
+<h2 id="relay-title">Can you pass along the same message?</h2>
+<p>Practice a family check-in at the table, with no phone call or text. One person reads a fictional update aloud. The other listens for the place and the time of the next update. Playing alone? Read it once, hide it and try the same questions.</p>
+<div id="relay-read">
+<p class="relay-label" id="relay-round">Practice card 1 of 3</p>
+<blockquote id="relay-message">Practice only: We’re at the library entrance. We’ll check in again at 3:30 p.m.</blockquote>
+<button id="relay-hide" type="button" disabled>Hide the message and take a turn</button>
+</div>
+<form id="relay-turn" hidden>
+<h3 tabindex="-1" id="relay-turn-title">Listener’s turn</h3>
+<p>Say the message back before choosing. Asking for a repeat is a valid answer.</p>
+<label for="relay-place">What place did you hear?</label><select id="relay-place" required></select>
+<label for="relay-time">When is the next update?</label><select id="relay-time" required></select>
+<button type="submit">Compare with the card</button>
+</form>
+<div id="relay-out" hidden><h3 id="relay-out-title" tabindex="-1">Compare your check-in</h3><p id="relay-reference"></p><ul id="relay-feedback"></ul><p id="relay-next-step"></p>
+<button type="button" id="relay-next">Switch roles and try the next card</button></div>
+<p class="relay-note">These are fictional details for a rehearsal, not destinations or instructions for an emergency. The exercise asks for no names, numbers or addresses and sends or stores nothing.</p>
+<p>The National Weather Service’s <a href="https://www.weather.gov/owlie/communicationsplan">family communications guide</a> recommends practicing your plan and links to Ready.gov’s contact-card and map resources. This separate exercise from Honest Little Apps practices listening and clarifying. <a href="https://apps.apple.com/us/app/family-ready-emergency-plan/id6792019825">See Family Ready on the App Store ↗</a></p>
+<noscript>For an offline version, cover the sample message with paper, ask your listener for the place and next update time, then uncover it and compare. Try again with the roles reversed.</noscript>
+</section>
 <section>
 <h2>What three of the days look like in the app</h2>
 <div class="tour"><figure class="shot"><img src="/assets/family-ready/screen-3-390.webp" srcset="/assets/family-ready/screen-3-390.webp 390w, /assets/family-ready/screen-3-780.webp 780w" sizes="(max-width:600px) 90vw, 300px" width="390" height="844" alt="Family Ready Emergency Mode: a dark high-contrast screen titled Alex&#x27;s Emergency Card, offline copy in use, with a Call first contact and a Call button" loading="lazy"><svg viewBox="0 0 390 844" aria-hidden="true"><path d="M40 520 C 70 500, 110 505, 150 520" fill="none" stroke="#f6992e" stroke-width="2.4" stroke-linecap="round" stroke-dasharray="5 4"/><text x="24" y="505" class="marker">offline, no internet needed</text></svg><figcaption>Day 3 result: Emergency Mode. One tap, large text, offline, and a Call button for the first person to reach.</figcaption></figure><figure class="shot"><img src="/assets/family-ready/screen-2-390.webp" srcset="/assets/family-ready/screen-2-390.webp 390w, /assets/family-ready/screen-2-780.webp 780w" sizes="(max-width:600px) 90vw, 300px" width="390" height="844" alt="Family Ready Emergency Card question 4 of 6: Are there current medications someone should know? with options None added, Add medications, I don&#x27;t know, plus Read aloud and Ask someone later" loading="lazy"><svg viewBox="0 0 390 844" aria-hidden="true"><path d="M250 650 C 290 630, 320 620, 345 600" fill="none" stroke="#f6992e" stroke-width="2.4" stroke-linecap="round" stroke-dasharray="5 4"/><text x="150" y="680" class="marker">&quot;I don&#x27;t know&quot; is allowed</text></svg><figcaption>The card is built from six plain questions. "I don't know" and "Ask someone later" are real answers, which is why it gets finished.</figcaption></figure><figure class="shot"><img src="/assets/family-ready/screen-4-390.webp" srcset="/assets/family-ready/screen-4-390.webp 390w, /assets/family-ready/screen-4-780.webp 780w" sizes="(max-width:600px) 90vw, 300px" width="390" height="844" alt="Family Ready Plan screen with plan review current, last reviewed date, nothing missing, and plan sections Today, If I am unavailable, and Later" loading="lazy"><svg viewBox="0 0 390 844" aria-hidden="true"><path d="M60 300 C 100 280, 150 285, 200 300" fill="none" stroke="#f6992e" stroke-width="2.4" stroke-linecap="round" stroke-dasharray="5 4"/><text x="30" y="280" class="marker">review date on record</text></svg><figcaption>Day 7 result: a review date. Sections are split into Today, If I am unavailable, and Later, so you can stop after the first one.</figcaption></figure></div>
@@ -163,5 +185,47 @@ ul{padding-left:20px}li{margin:.3em 0}
  document.getElementById('shuffle').addEventListener('click',function(){ var items=[...list.children]; for(var i=items.length-1;i>0;i--){ var j=Math.floor(Math.random()*(i+1)); list.insertBefore(items[j],items[i].nextSibling); items=[...list.children]; } renum(); });
 })();
 </script>
-</body>
+<script>(() => {
+  const get = id => document.getElementById('relay-'+id);
+  const cards = [
+    ['the library entrance', '3:30 p.m.', 'the library desk', '3:15 p.m.'],
+    ['the park information board', '11:20 a.m.', 'the park gate', '11:40 a.m.'],
+    ['the community center lobby', '4:45 p.m.', 'the community center side door', '4:15 p.m.']
+  ];
+  let round=0;
+  const line=()=> 'Practice only: We’re at '+cards[round][0]+'. We’ll check in again at '+cards[round][1];
+  function renderCard(){
+    get('read').hidden=false; get('turn').hidden=true; get('out').hidden=true;
+    get('round').textContent='Practice card '+(round+1)+' of '+cards.length;
+    get('message').textContent=line();
+  }
+  function populate(select,values){
+    select.replaceChildren(new Option('Choose an answer',''),...values.map(v=>new Option(v,v)),new Option('Please repeat that part','repeat'));
+    select.value='';
+  }
+  get('hide').disabled=false;
+  get('hide').onclick=()=>{
+    const [place,time,otherPlace,otherTime]=cards[round];
+    populate(get('place'),round%2?[place,otherPlace]:[otherPlace,place]);
+    populate(get('time'),round%2?[otherTime,time]:[time,otherTime]);
+    get('read').hidden=true;get('turn').hidden=false;get('turn-title').focus();
+  };
+  get('turn').onsubmit=e=>{
+    e.preventDefault();
+    const details=[['Place',get('place').value,cards[round][0]],['Next update',get('time').value,cards[round][1]]];
+    get('reference').textContent=line(); get('feedback').replaceChildren();
+    for(const [label,answer,correct] of details){
+      const row=document.createElement('li');
+      row.textContent=label+': '+(answer===correct?'matches the card ('+correct+').':answer==='repeat'?'you asked for a repeat. The card said '+correct+(correct.endsWith('.')?'':'.'):'you heard '+answer+'; the card said '+correct+(correct.endsWith('.')?'':'.'));
+      get('feedback').append(row);
+    }
+    const mismatches=details.filter(([,a,c])=>a!==c);
+    get('next-step').textContent=mismatches.length?'Try this aloud: “Could you repeat '+(mismatches.length===2?'the place and next update time':mismatches[0][0]==='Place'?'the exact place':'the next update time')+'?” Listen again before passing it on.':'Both details match. Switch roles so the other person can practice giving the update.';
+    get('next').textContent=round===2?'Start again with the first card':'Switch roles and try the next card';
+    get('turn').hidden=true;get('out').hidden=false;get('out-title').focus();
+  };
+  get('next').onclick=()=>{round=(round+1)%cards.length;renderCard();get('hide').focus();};
+  renderCard();
+})();
+</script></body>
 </html>
