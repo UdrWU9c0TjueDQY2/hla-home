@@ -7,6 +7,9 @@ from reportlab.lib.colors import HexColor
 from reportlab.platypus import Paragraph
 from reportlab.lib.styles import ParagraphStyle
 from reportlab.lib.enums import TA_LEFT
+from reportlab.graphics.barcode.qr import QrCodeWidget
+from reportlab.graphics.shapes import Drawing
+from reportlab.graphics import renderPDF
 
 ROOT = Path(__file__).resolve().parents[2]
 OUT = ROOT / 'src/brainy-bucks/context-clues-practice/same-word-different-clue.pdf'
@@ -86,10 +89,17 @@ def build():
         para(c, f'1. {why1} &nbsp; 2. {why2}', 54, top-24, 516, BASE)
         top -= 66
     para(c, '<b>Try a transfer:</b> choose one word and say a new sentence for each meaning. The listener names the clue. An answer can be useful even when its wording differs from the key.', 42, 232, 528)
-    c.setFillColor(HexColor('#f1edf7')); c.roundRect(42, 71, 528, 106, 8, fill=1, stroke=0)
-    para(c, '<b>Optional next activity for grown-ups</b><br/>Honest Little Apps publishes Brainy Bucks: Math &amp; Reading. This original free companion is separate from the app. The iPhone/iPad app offers free daily quests and optional paid Plus features; check Apple for current local offers.', 54, 165, 504, SMALL)
-    para(c, 'View Brainy Bucks on the App Store: <b>Apple ID 6788619891</b>', 54, 101, 504, SMALL)
-    c.linkURL(APPLE, (52, 77, 560, 105), relative=0, thickness=0)
+    c.setFillColor(HexColor('#f1edf7')); c.roundRect(42, 61, 528, 116, 8, fill=1, stroke=0)
+    para(c, '<b>Optional next activity for grown-ups</b>', 54, 165, 420, SMALL)
+    para(c, 'Honest Little Apps publishes Brainy Bucks: Math &amp; Reading. This original free companion is separate from the app. The iPhone/iPad app offers free daily quests and optional paid Plus features; check Apple for current local offers.', 54, 145, 420, SMALL)
+    para(c, '<b>View Brainy Bucks on the App Store</b> - click or scan.', 54, 87, 420, SMALL)
+    qr = QrCodeWidget(APPLE)
+    x0, y0, x1, y1 = qr.getBounds()
+    size = 64
+    drawing = Drawing(size, size, transform=[size/(x1-x0),0,0,size/(y1-y0),0,0])
+    drawing.add(qr); renderPDF.draw(drawing, c, 493, 101)
+    c.setFont('HLA', 7); c.setFillColor(INK); c.drawCentredString(525, 90, 'App Store')
+    c.linkURL(APPLE, (52, 67, 560, 168), relative=0, thickness=0)
     footer(c, 2); c.save()
     print(OUT)
 
