@@ -1,1 +1,14 @@
-{"title": "Weekend Home Fix List: Fit Small Jobs Into One Hour", "description": "Build a small home punch list from your own estimates. See which jobs fit in this session, what to set aside, and how many minutes remain.", "appSlug": "roommend", "strategy": "interactive-tool", "query": "Which home jobs fit this weekend?", "tags": ["roommend", "planner"], "published": "2026-11-05", "updated": "2026-11-05", "draft": false}
+{
+ "title": "Weekend Home Fix List: Fit Small Jobs Into One Hour",
+ "description": "Build a small home punch list from your own estimates. See which jobs fit in this session, what to set aside, and how many minutes remain.",
+ "appSlug": "roommend",
+ "strategy": "interactive-tool",
+ "query": "Which home jobs fit this weekend?",
+ "tags": [
+  "roommend",
+  "planner"
+ ],
+ "published": "2026-11-05",
+ "updated": "2026-11-06",
+ "draft": false
+}
