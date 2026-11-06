@@ -1,6 +1,6 @@
 {
   "title": "Elapsed Time Practice with Clocks: Six Minute-Hop Puzzles",
-  "description": "Practice elapsed time with six untimed clock puzzles. Count to the next hour, see each minute hop and reveal a worked solution whenever you need it.",
+  "description": "Practice elapsed time with six untimed clock puzzles, then use a free three-problem library activity with a separate explained answer key.",
   "appSlug": "brainy-bucks",
   "strategy": "playable-practice",
   "query": "elapsed time practice with clocks",
@@ -10,6 +10,6 @@
     "math"
   ],
   "published": "2026-11-04",
-  "updated": "2026-11-04",
+  "updated": "2026-11-06",
   "draft": false
 }
