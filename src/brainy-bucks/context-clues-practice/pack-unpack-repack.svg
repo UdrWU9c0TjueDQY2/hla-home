@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1020" viewBox="0 0 800 1020" role="img" aria-labelledby="title desc">
+<title id="title">Pack, unpack or repack?</title><desc id="desc">Three example sentences show how a base word changes when un- or re- is added. Each answer identifies the phrase that supports it.</desc>
+<rect width="800" height="1020" fill="white"/>
+<style>text{fill:#20332d;font-family:DejaVu Sans,sans-serif}.serif{font-family:DejaVu Serif,serif;font-weight:bold}.small{font-size:20px}.key{font-size:27px;font-weight:bold}.body{font-size:29px}.tag{font-weight:bold;font-size:19px;letter-spacing:1px}.accent{fill:#135d46}</style>
+<text x="44" y="55" class="tag">BRAINY BUCKS  /  READING COMPANION</text>
+<text x="44" y="120" class="serif" font-size="47">Pack, unpack or repack?</text>
+<text x="44" y="173" class="body">Read each sentence. Fill the gap, then point</text>
+<text x="44" y="212" class="body">to the words that prove your choice.</text>
+<path d="M44 255 H756" stroke="#9aa9a0" stroke-width="2"/>
+<text x="44" y="293" class="tag accent">BASE WORD</text>
+<text x="44" y="340" class="body">I will ___ the bag for class.</text>
+<text x="44" y="378" class="body">I put my books inside.</text>
+<text x="44" y="419" class="key">pack  ←  “put my books inside”</text>
+<text x="44" y="451" class="small">Pack means put things into a bag.</text>
+<path d="M44 467 H756" stroke="#9aa9a0" stroke-width="2"/>
+<text x="44" y="505" class="tag accent">REVERSE THE ACTION</text>
+<text x="44" y="552" class="body">I will ___ the bag after class.</text>
+<text x="44" y="590" class="body">I take everything out.</text>
+<text x="44" y="631" class="key">unpack  ←  “take everything out”</text>
+<text x="44" y="663" class="small">Unpack reverses the act of packing.</text>
+<path d="M44 679 H756" stroke="#9aa9a0" stroke-width="2"/>
+<text x="44" y="717" class="tag accent">DO IT AGAIN</text>
+<text x="44" y="764" class="body">I emptied the bag to find my key.</text>
+<text x="44" y="802" class="body">I will ___ it and put the books in again.</text>
+<text x="44" y="843" class="key">repack  ←  “put the books in again”</text>
+<text x="44" y="875" class="small">Repack means pack again.</text>
+<path d="M44 891 H756" stroke="#9aa9a0" stroke-width="2"/>
+<text x="44" y="928" class="small">Try it aloud: change one clue. Does the word still fit?</text>
+<text x="44" y="982" class="small accent">Honest Little Apps · Reprint with publisher credit.</text>
+</svg>
