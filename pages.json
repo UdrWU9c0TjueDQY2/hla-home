@@ -1,0 +1,397 @@
+[
+ {
+  "title": "A clearer household plan | Honest Little Apps",
+  "description": "Three practical home and learning activities. Original exercises with copy and print controls.",
+  "appSlug": "portfolio",
+  "strategy": "independent-activity-collection",
+  "query": "a clearer household plan",
+  "tags": [
+   "original activity",
+   "printable",
+   "home"
+  ],
+  "path": "/activities/practical-try-it-cards/",
+  "url": "https://udrwu9c0tjuedqy2.github.io/hla-home/activities/practical-try-it-cards/",
+  "published": "2026-11-06",
+  "updated": "2026-11-06"
+ },
+ {
+  "title": "Ready Home Family: Mini-Challenges with Worked Answers",
+  "description": "Choose a free challenge collection, compare answer choices and read the worked explanation. Original companion activities from Honest Little Apps.",
+  "appSlug": "resources",
+  "strategy": "challenge-collection-index",
+  "query": "ready home family practice questions",
+  "tags": [
+   "mini challenges"
+  ],
+  "path": "/activities/scenario-challenges/",
+  "url": "https://udrwu9c0tjuedqy2.github.io/hla-home/activities/scenario-challenges/",
+  "published": "2026-11-06",
+  "updated": "2026-11-06"
+ },
+ {
+  "title": "Library Elapsed-Time Activity and Separate Answer Key",
+  "description": "Three free library timing puzzles: draw minute hops, cross noon, and separate activity time from a break. Read online or print the activity and explained answers separately.",
+  "appSlug": "brainy-bucks",
+  "strategy": "printable-partner-activity",
+  "query": "library elapsed time activity",
+  "tags": [
+   "elapsed-time",
+   "library-program",
+   "printable",
+   "math"
+  ],
+  "path": "/brainy-bucks/elapsed-time-hop-lab/library-time-stations/",
+  "url": "https://udrwu9c0tjuedqy2.github.io/hla-home/brainy-bucks/elapsed-time-hop-lab/library-time-stations/",
+  "published": "2026-11-06",
+  "updated": "2026-11-06"
+ },
+ {
+  "title": "Little Word and Number Decisions",
+  "description": "27 parent-led scenarios covering arithmetic, reading clues, sounds, patterns and clear writing.",
+  "appSlug": "brainy-bucks",
+  "strategy": "worked-scenario-quiz",
+  "query": "parent led reasoning questions",
+  "tags": [
+   "worked examples",
+   "mini challenges",
+   "brainy-bucks"
+  ],
+  "path": "/brainy-bucks/scenario-challenges/",
+  "url": "https://udrwu9c0tjuedqy2.github.io/hla-home/brainy-bucks/scenario-challenges/",
+  "published": "2026-11-06",
+  "updated": "2026-11-06"
+ },
+ {
+  "title": "27 Household Planning Judgment Challenges",
+  "description": "Practise clearer household records, shared responsibilities and source checking through fictional family planning scenarios.",
+  "appSlug": "family-ready",
+  "strategy": "worked-scenario-quiz",
+  "query": "household planning scenarios",
+  "tags": [
+   "worked examples",
+   "mini challenges",
+   "family-ready"
+  ],
+  "path": "/family-ready/scenario-challenges/",
+  "url": "https://udrwu9c0tjuedqy2.github.io/hla-home/family-ready/scenario-challenges/",
+  "published": "2026-11-06",
+  "updated": "2026-11-06"
+ },
+ {
+  "title": "27 Home Project Planning Challenges",
+  "description": "Practise room-project decisions, clear observations, scope checks and household handoffs through fictional scenarios.",
+  "appSlug": "roommend",
+  "strategy": "worked-scenario-quiz",
+  "query": "home project planning quiz",
+  "tags": [
+   "worked examples",
+   "mini challenges",
+   "roommend"
+  ],
+  "path": "/roommend/scenario-challenges/",
+  "url": "https://udrwu9c0tjuedqy2.github.io/hla-home/roommend/scenario-challenges/",
+  "published": "2026-11-06",
+  "updated": "2026-11-06"
+ },
+ {
+  "title": "Weekend Home Fix List: Fit Small Jobs Into One Hour",
+  "description": "Build a small home punch list from your own estimates. See which jobs fit in this session, what to set aside, and how many minutes remain.",
+  "appSlug": "roommend",
+  "strategy": "interactive-tool",
+  "query": "Which home jobs fit this weekend?",
+  "tags": [
+   "roommend",
+   "planner"
+  ],
+  "path": "/roommend/weekend-fix-list/",
+  "url": "https://udrwu9c0tjuedqy2.github.io/hla-home/roommend/weekend-fix-list/",
+  "published": "2026-11-05",
+  "updated": "2026-11-06"
+ },
+ {
+  "title": "Context Clues Practice: 6 Passages & Partner Sheet | Brainy Bucks",
+  "description": "Six original context-clues passages plus a two-page read-aloud partner sheet with five paired meanings and an adult answer key. Free, no account.",
+  "appSlug": "brainy-bucks",
+  "strategy": "original_reading_activity",
+  "query": "context clues practice for kids",
+  "tags": [
+   "context clues",
+   "reading practice",
+   "vocabulary"
+  ],
+  "path": "/brainy-bucks/context-clues-practice/",
+  "url": "https://udrwu9c0tjuedqy2.github.io/hla-home/brainy-bucks/context-clues-practice/",
+  "published": "2026-11-04",
+  "updated": "2026-11-05"
+ },
+ {
+  "title": "Elapsed Time Practice with Clocks: Six Minute-Hop Puzzles",
+  "description": "Practice elapsed time with six untimed clock puzzles, then use a free three-problem library activity with a separate explained answer key.",
+  "appSlug": "brainy-bucks",
+  "strategy": "playable-practice",
+  "query": "elapsed time practice with clocks",
+  "tags": [
+   "elapsed-time",
+   "clock-practice",
+   "math"
+  ],
+  "path": "/brainy-bucks/elapsed-time-hop-lab/",
+  "url": "https://udrwu9c0tjuedqy2.github.io/hla-home/brainy-bucks/elapsed-time-hop-lab/",
+  "published": "2026-11-04",
+  "updated": "2026-11-06"
+ },
+ {
+  "title": "Equivalent Fractions Visual Lab: Same Amount, More Equal Parts",
+  "description": "Explore equivalent fractions with two equal-length strips. Multiply the numerator and denominator together and see why the shaded amount stays the same.",
+  "appSlug": "brainy-bucks",
+  "strategy": "interactive tool with specific search intent and verified feature bridge",
+  "query": "Equivalent Fractions Visual Lab: Same Amount, More Equal Parts",
+  "tags": [
+   "brainy-bucks",
+   "fractions",
+   "free tool"
+  ],
+  "path": "/brainy-bucks/equivalent-fractions-visual-lab/",
+  "url": "https://udrwu9c0tjuedqy2.github.io/hla-home/brainy-bucks/equivalent-fractions-visual-lab/",
+  "published": "2026-11-04",
+  "updated": "2026-11-04"
+ },
+ {
+  "title": "What to Do When Your Kid Refuses Math Worksheets",
+  "description": "Try five hands-on math games from Kindergarten to Grade 4. Each card gives a question, a worked answer and a way to practise the skill without a worksheet.",
+  "appSlug": "brainy-bucks",
+  "strategy": "audience-page",
+  "query": "kid refuses to do math worksheets",
+  "tags": [
+   "parents",
+   "math",
+   "kids",
+   "homework",
+   "games"
+  ],
+  "path": "/brainy-bucks/kid-refuses-to-do-math-worksheets/",
+  "url": "https://udrwu9c0tjuedqy2.github.io/hla-home/brainy-bucks/kid-refuses-to-do-math-worksheets/",
+  "published": "2026-11-04",
+  "updated": "2026-11-05"
+ },
+ {
+  "title": "Rounding to the Nearest 10 or 100: Visual Number Line Lab",
+  "description": "See why a number rounds up or down. Explore a labelled number line, compare distances, and try six free rounding practice cards with explanations.",
+  "appSlug": "brainy-bucks",
+  "strategy": "interactive-tool",
+  "query": "rounding nearest 10 100 number line practice",
+  "tags": [
+   "math",
+   "rounding",
+   "number-line",
+   "parents"
+  ],
+  "path": "/brainy-bucks/rounding-number-line-lab/",
+  "url": "https://udrwu9c0tjuedqy2.github.io/hla-home/brainy-bucks/rounding-number-line-lab/",
+  "published": "2026-11-04",
+  "updated": "2026-11-06"
+ },
+ {
+  "title": "Put the Story in Order: Three Free Reading Sequencing Activities",
+  "description": "Order three short stories using clues, then read an original two-voice play with a child. Print the script and practise telling what happened first, next and last.",
+  "appSlug": "brainy-bucks",
+  "strategy": "interactive-tool",
+  "query": "reading sequencing activities first next last",
+  "tags": [
+   "reading",
+   "sequencing",
+   "families"
+  ],
+  "path": "/brainy-bucks/story-order-workshop/",
+  "url": "https://udrwu9c0tjuedqy2.github.io/hla-home/brainy-bucks/story-order-workshop/",
+  "published": "2026-11-04",
+  "updated": "2026-11-06"
+ },
+ {
+  "title": "Emergency Kit Expiry Tracker: Free One-Page Printable",
+  "description": "A ten-row printable for recording item labels, dates and follow-up actions, with clear guidance on what the sheet does and does not check.",
+  "appSlug": "family-ready",
+  "strategy": "printable",
+  "query": "emergency kit expiry tracker printable",
+  "tags": [
+   "emergency-kit",
+   "printable",
+   "household"
+  ],
+  "path": "/family-ready/kit-expiry-tracker/",
+  "url": "https://udrwu9c0tjuedqy2.github.io/hla-home/family-ready/kit-expiry-tracker/",
+  "published": "2026-11-04",
+  "updated": "2026-11-04"
+ },
+ {
+  "title": "Test an Offline Emergency Contact Card: Family Ready Access Guide",
+  "description": "Four access questions for no internet, a locked phone, a missing device or a trusted helper, plus three first-week checkpoints.",
+  "appSlug": "family-ready",
+  "strategy": "first-week-guide",
+  "query": "test an offline emergency contact card",
+  "tags": [
+   "emergency-card",
+   "offline",
+   "household"
+  ],
+  "path": "/family-ready/offline-card-access-check/",
+  "url": "https://udrwu9c0tjuedqy2.github.io/hla-home/family-ready/offline-card-access-check/",
+  "published": "2026-11-04",
+  "updated": "2026-11-05"
+ },
+ {
+  "title": "Family Records Locator Checklist: Can the Right Person Find It?",
+  "description": "Check whether four kinds of household records have a known location, clear access and a current copy. Get a practical next-action list without entering private details.",
+  "appSlug": "family-ready",
+  "strategy": "interactive-tool",
+  "query": "family records locator checklist",
+  "tags": [
+   "household",
+   "records",
+   "checklist"
+  ],
+  "path": "/family-ready/records-locator-audit/",
+  "url": "https://udrwu9c0tjuedqy2.github.io/hla-home/family-ready/records-locator-audit/",
+  "published": "2026-11-04",
+  "updated": "2026-11-04"
+ },
+ {
+  "title": "Winter Storm Emergency Plan for Families (2026-27 Season)",
+  "description": "Rehearse four winter storm planning tasks with your household. Find local alerts, check a paper contact card and decide which supplies to review before an outage.",
+  "appSlug": "family-ready",
+  "strategy": "interactive-checklist",
+  "query": "winter storm emergency plan for families",
+  "tags": [
+   "emergency-plan",
+   "winter",
+   "families",
+   "power-outage"
+  ],
+  "path": "/family-ready/winter-storm-emergency-plan-for-families/",
+  "url": "https://udrwu9c0tjuedqy2.github.io/hla-home/family-ready/winter-storm-emergency-plan-for-families/",
+  "published": "2026-11-04",
+  "updated": "2026-11-05"
+ },
+ {
+  "title": "How to Take Before and After Photos for Home Repairs | Match Lab",
+  "description": "Build a repeatable before, progress and recheck photo plan for six kinds of home projects. Match angle, distance, light and reference points without uploading images.",
+  "appSlug": "roommend",
+  "strategy": "interactive-tool",
+  "query": "how to take before and after photos for home repairs",
+  "tags": [
+   "home-repair",
+   "before-and-after-photos",
+   "photo-checklist",
+   "recheck",
+   "documentation"
+  ],
+  "path": "/roommend/before-after-home-repair-photo-lab/",
+  "url": "https://udrwu9c0tjuedqy2.github.io/hla-home/roommend/before-after-home-repair-photo-lab/",
+  "published": "2026-11-04",
+  "updated": "2026-11-04"
+ },
+ {
+  "title": "Home Fix Recheck Calendar — Plan Dates and Download",
+  "description": "Plan follow-up dates for a home task and download an all-day calendar file. Choose your own interval, preview every date, and keep the notes together.",
+  "appSlug": "roommend",
+  "strategy": "interactive-tool",
+  "query": "home repair recheck calendar follow up dates",
+  "tags": [
+   "home tasks",
+   "rechecks",
+   "calendar"
+  ],
+  "path": "/roommend/home-fix-recheck-calendar/",
+  "url": "https://udrwu9c0tjuedqy2.github.io/hla-home/roommend/home-fix-recheck-calendar/",
+  "published": "2026-11-04",
+  "updated": "2026-11-04"
+ },
+ {
+  "title": "Home Repair Request Template: Build a Clear Maintenance Brief",
+  "description": "Turn a vague home repair note into a clear maintenance request. Describe the location, observations and next step, then copy an editable brief.",
+  "appSlug": "roommend",
+  "strategy": "interactive-template",
+  "query": "home repair request template",
+  "tags": [
+   "repair-request",
+   "maintenance",
+   "home-notes"
+  ],
+  "path": "/roommend/repair-request-builder/",
+  "url": "https://udrwu9c0tjuedqy2.github.io/hla-home/roommend/repair-request-builder/",
+  "published": "2026-11-04",
+  "updated": "2026-11-05"
+ },
+ {
+  "title": "Wall Paint Area Calculator: Room Size, Openings and Coats",
+  "description": "Subtract measured openings, choose your coats and check the estimate against an illustrated four-wall example. Supports metres and feet.",
+  "appSlug": "roommend",
+  "strategy": "interactive tool with specific search intent and verified feature bridge",
+  "query": "Wall Paint Area Calculator: Room Size, Openings and Coats",
+  "tags": [
+   "roommend",
+   "paint",
+   "free tool"
+  ],
+  "path": "/roommend/wall-paint-area-calculator/",
+  "url": "https://udrwu9c0tjuedqy2.github.io/hla-home/roommend/wall-paint-area-calculator/",
+  "published": "2026-11-04",
+  "updated": "2026-11-05"
+ },
+ {
+  "title": "Winter Break Math Practice: 7 Myths, 7 Facts, 10 Min a Day",
+  "description": "Winter break math practice without the worksheet packet: seven myths tapped open, a 10-minute-a-day plan for your child, and what the research says.",
+  "appSlug": "brainy-bucks",
+  "strategy": "myth-vs-fact",
+  "query": "winter break math practice",
+  "tags": [
+   "kids",
+   "math",
+   "reading",
+   "parents",
+   "winter-break",
+   "learning-loss"
+  ],
+  "path": "/brainy-bucks/winter-break-math-practice-myths-facts/",
+  "url": "https://udrwu9c0tjuedqy2.github.io/hla-home/brainy-bucks/winter-break-math-practice-myths-facts/",
+  "published": "2026-11-03",
+  "updated": "2026-11-03"
+ },
+ {
+  "title": "7-Day Family Emergency Plan Challenge (Free Printable)",
+  "description": "A 7-day family emergency plan challenge for a new home: one 20-minute task a day, a free printable tracker, a Ready.gov kit list and an offline card.",
+  "appSlug": "family-ready",
+  "strategy": "challenge-plan",
+  "query": "7-day family emergency plan challenge",
+  "tags": [
+   "emergency-plan",
+   "family",
+   "printable",
+   "new-home",
+   "checklist"
+  ],
+  "path": "/family-ready/7-day-family-emergency-plan-challenge/",
+  "url": "https://udrwu9c0tjuedqy2.github.io/hla-home/family-ready/7-day-family-emergency-plan-challenge/",
+  "published": "2026-11-03",
+  "updated": "2026-11-05"
+ },
+ {
+  "title": "How to Make a House Safer for Elderly Parents: 3 Methods",
+  "description": "How to make a house safer for elderly parents in a weekend: the CDC’s 16 checks sorted into this week, this month and someday, and three methods compared.",
+  "appSlug": "roommend",
+  "strategy": "method-vs-method",
+  "query": "how to make a house safer for elderly parents",
+  "tags": [
+   "home-safety",
+   "elderly-parents",
+   "fall-prevention",
+   "checklist",
+   "family"
+  ],
+  "path": "/roommend/how-to-make-a-house-safer-for-elderly-parents/",
+  "url": "https://udrwu9c0tjuedqy2.github.io/hla-home/roommend/how-to-make-a-house-safer-for-elderly-parents/",
+  "published": "2026-11-03",
+  "updated": "2026-11-06"
+ }
+]

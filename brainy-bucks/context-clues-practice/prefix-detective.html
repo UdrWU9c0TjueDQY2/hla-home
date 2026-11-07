@@ -1,0 +1,41 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,follow"><title>Prefix detective | Brainy Bucks reading companion</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#fffcf4;color:#21382e;font:17px/1.48 system-ui,sans-serif}main{max-width:39rem;margin:auto;padding:clamp(16px,4vw,32px)}h1{font:700 clamp(1.8rem,6vw,2.6rem)/1.1 Georgia,serif;margin:0 0 8px}p{margin:8px 0}#passage{border-left:5px solid #cb8c2f;padding:10px 14px;background:#f8efd8;margin:16px 0;font-size:1.15rem}.word{font:bold 1.82rem Georgia,serif;letter-spacing:.01em}.question{font-weight:700;margin:11px 0}.choices{display:flex;flex-wrap:wrap;gap:8px}button{font:inherit;color:#174931;border:1px solid #457956;border-radius:7px;background:white;padding:9px 13px;min-height:44px;cursor:pointer}button:hover{background:#e4efdc}button:focus-visible,a:focus-visible,[tabindex]:focus-visible{outline:3px solid #9a4800;outline-offset:2px}#next{background:#154e36;color:white;margin-top:6px}#feedback{min-height:1.6em;color:#244c36}footer{margin-top:19px;border-top:1px solid #bbc9b8;padding-top:9px;font-size:.88rem}a{color:#145039}#round{font-weight:600;color:#556650} [hidden]{display:none!important}
+</style><main><h1>Prefix detective</h1><p>Build the word, then find the words in the sentence that prove its meaning.</p><noscript>Example: “The knot is tight. Undo it so the rope is loose.” The prefix un- reverses the action of doing up the knot. “So the rope is loose” confirms that meaning. Enable JavaScript to play six rounds.</noscript>
+<section id="game" hidden><p id="round"></p><p id="passage"></p><p class="word" id="word"></p><p class="question" id="question" tabindex="-1"></p><div id="choices" class="choices" role="group" aria-labelledby="question"></div><p id="feedback" role="status"></p><button id="next" hidden></button></section>
+<footer><span>Brainy Bucks browser companion · Honest Little Apps</span><br><a target="_blank" rel="noopener" href="https://apps.apple.com/us/app/brainy-bucks-math-reading/id6788619891">For grown-ups: Brainy Bucks on the App Store</a></footer></main>
+<script>
+'use strict';
+const cards=[
+ {base:'read',prefix:'re',passage:'I finished the note, but I missed a detail. I will ___ the note a second time.',clues:['missed a detail','a second time','the note'],answer:1,why:'Reread means read again. A second reading is another reading.'},
+ {base:'heat',prefix:'pre',passage:'The oven is cold. I will ___ it before the bread goes in.',clues:['the oven','the bread','before the bread goes in'],answer:2,why:'Preheat means heat beforehand. The oven warms up before the bread goes in.'},
+ {base:'count',prefix:'mis',passage:'There are six shells. If I say there are five, I ___ them because my total is wrong.',clues:['my total is wrong','six shells','I say'],answer:0,why:'Miscount means count incorrectly. The wrong total confirms the mistake.'},
+ {base:'tie',prefix:'un',passage:'The package is tied shut. I will ___ the ribbon so the knot comes apart.',clues:['the package','so the knot comes apart','the ribbon'],answer:1,why:'Untie reverses tying. The knot comes apart instead of holding the ribbon together.'},
+ {base:'paint',prefix:'re',passage:'The gate was painted last year. Its color has faded, so we will ___ it with a fresh coat.',clues:['the gate','its color','with a fresh coat'],answer:2,why:'Repaint means paint again. The existing paint and a fresh coat describe two rounds of painting.'},
+ {base:'label',prefix:'mis',passage:'The blue bin holds scarves. If its tag says socks, we ___ the bin with the wrong name.',clues:['with the wrong name','the blue bin','holds scarves'],answer:0,why:'Mislabel means give an incorrect label. The tag gives the wrong name for what is inside.'}
+];
+const prefixes=['mis','pre','re','un'];
+const get=id=>document.getElementById(id);
+let round=0, stage='prefix';
+function render(focus=false){
+ const card=cards[round], finished=stage==='done';
+ get('round').textContent='Round '+(round+1)+' of '+cards.length;
+ get('passage').textContent=stage==='prefix'?card.passage:card.passage.replace('___',card.prefix+card.base);
+ get('word').textContent=(stage==='prefix'?'___':card.prefix+' + ')+card.base;
+ get('question').textContent=finished?'Meaning checked.':stage==='prefix'?'Which prefix fits the base word?':'Which phrase best confirms that meaning?';
+ const options=stage==='prefix'?prefixes:card.clues;
+ get('choices').replaceChildren();
+ if(!finished) options.forEach((value,index)=>{
+  const b=document.createElement('button');b.type='button';b.textContent=value+(stage==='prefix'?'-':'');b.addEventListener('click',()=>{
+   const correct=stage==='prefix'?value===card.prefix:index===card.answer;
+   if(!correct){get('feedback').textContent=stage==='prefix'?'Read the whole sentence. Is the action repeated, reversed, early or mistaken?':'That phrase gives some information. Try the phrase that shows the changed meaning.';return;}
+   stage=stage==='prefix'?'clue':'done';render(true);
+   get('feedback').textContent=stage==='clue'?'The word fits. Now check the evidence.':card.why;
+  });get('choices').append(b);
+ });
+ get('next').hidden=!finished;get('next').textContent=round===cards.length-1?'Play again':'Next word';
+ if(focus)get('question').focus();
+}
+get('next').onclick=()=>{round=(round+1)%cards.length;stage='prefix';get('feedback').textContent='';render(true)};
+get('game').hidden=false;render();
+</script></html>

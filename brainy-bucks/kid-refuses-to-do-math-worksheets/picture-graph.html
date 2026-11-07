@@ -1,0 +1,38 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,follow"><meta name="description" content="Read three picture graphs, use the key and solve six questions about totals and differences."><link rel="canonical" href="https://udrwu9c0tjuedqy2.github.io/hla-home/brainy-bucks/kid-refuses-to-do-math-worksheets/picture-graph.html"><title>Read the picture graph | Brainy Bucks</title>
+<style>*{box-sizing:border-box}body{margin:0;background:#fcf5df;color:#162e3e;font:17px/1.5 system-ui,sans-serif}main{max-width:760px;padding:24px clamp(16px,4vw,42px) 40px;margin:auto}a{color:#1c5265}h1{font:700 clamp(2.6rem,7vw,4.3rem)/1 Georgia,serif;letter-spacing:-.05em;margin:1.7rem 0 .8rem}.card{background:#fffdf7;border:2px solid #203d48;border-radius:10px;padding:clamp(15px,4vw,28px);margin:1.1rem 0}h2{font:700 1.7rem Georgia,serif;margin:.4rem 0}h3{font:700 1.2rem system-ui;margin:1.1rem 0 .5rem}.key{background:#fce4a1;border-radius:4px;padding:.5rem .7rem;margin:.4rem 0 .85rem}.chart{list-style:none;padding:0;margin:0}.chart li{display:grid;grid-template-columns:minmax(70px,26%) 1fr;gap:.6rem;align-items:center;padding:.5rem 0;border-bottom:1px solid #d1d9cb}.marks{display:flex;gap:4px;flex-wrap:wrap}.mark{display:inline-block;width:23px;height:23px;border:2px solid #185760;background:#24777a;border-radius:4px}.half{background:linear-gradient(to right,#24777a 50%,transparent 50%)}.actions{display:flex;gap:.5rem;align-items:end;flex-wrap:wrap}button,input,.cta{min-height:44px;padding:.5rem .8rem;font:650 1rem system-ui;border:1px solid #28495a;border-radius:5px}.cta,button{background:#214f60;color:white;cursor:pointer}.secondary{background:white;color:#214f60}input{width:7.5rem;max-width:100%;background:white}label{display:block;font-weight:650}.feedback{min-height:1.5rem}.cta{display:inline-block;text-decoration:none}a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid #c46920;outline-offset:3px}.fine{font-size:.9rem}[hidden]{display:none!important}</style></head>
+<body><main><a href="./">← Five-minute math practice</a><h1>Read the picture graph.</h1><p>A square can stand for more than one item. Check the key each time the graph changes. Use it to answer two questions per chart.</p>
+<section class="card"><p id="progress"></p><h2 id="title" tabindex="-1"></h2><p id="key" class="key"></p><ul id="chart" class="chart" aria-label="Picture graph"></ul><h3 id="question"></h3><form id="form" class="actions"><div><label for="answer">Your answer</label><input id="answer" type="number" step="1" min="0" required></div><button id="check">Check answer</button></form><p id="feedback" class="feedback" role="status"></p><div class="actions"><button id="next" hidden>Next</button><button id="show" class="secondary" type="button">Show the calculation</button></div></section>
+<noscript>Try this on paper: one square means two books. If Monday has three squares and Tuesday has five, Tuesday has four more books.</noscript>
+<h2>For the grown-up</h2><p>Ask the player to explain the key before counting. Brainy Bucks offers short math and reading practice on iPhone and iPad.</p><a class="cta" href="https://apps.apple.com/us/app/brainy-bucks-math-reading/id6788619891">View Brainy Bucks on the App Store</a><p class="fine">Original practice graphs with fictional data from Honest Little Apps.</p>
+<script>
+const charts=[
+ {title:'Books borrowed',unit:'books',key:2,rows:[['Monday',3],['Tuesday',5],['Wednesday',2]],qs:[
+  ['How many more books were borrowed on Tuesday than Monday?',4,'Tuesday has 5 squares and Monday has 3. The 2 extra squares represent 2 × 2 = 4 books.'],
+  ['How many books were borrowed across all three days?',20,'There are 3 + 5 + 2 = 10 squares. At 2 books per square, that gives 20 books.']]},
+ {title:'Garden harvest',unit:'tomatoes',key:3,rows:[['North bed',4],['South bed',1],['East bed',3]],qs:[
+  ['How many tomatoes came from the South and East beds together?',12,'The two beds have 1 + 3 = 4 squares. Each square represents 3 tomatoes, so the total is 12.'],
+  ['How many more tomatoes came from the North bed than the East bed?',3,'The North bed has one more square than the East bed. That square represents 3 tomatoes.']]},
+ {title:'Ferry passengers',unit:'passengers',key:4,rows:[['First trip',2.5],['Second trip',4],['Third trip',1.5]],qs:[
+  ['How many passengers rode on the first trip?',10,'Two whole squares represent 8 passengers; half a square represents 2 more. That makes 10.'],
+  ['How many passengers rode on the three trips in all?',32,'The first trip carried 10, the second 16 and the third 6. Together that makes 32 passengers.']]}
+];
+const el=id=>document.getElementById(id);let turn=0,first=0,tried=false,locked=false;
+function draw(){
+ const c=charts[Math.floor(turn/2)],q=c.qs[turn%2];tried=locked=false;
+ el('progress').textContent='Chart '+(Math.floor(turn/2)+1)+' of 3 · Question '+(turn%2+1)+' of 2';el('title').textContent=c.title;
+ el('key').textContent='1 full square = '+c.key+' '+c.unit+(c.key===4?'. Half a square = 2 passengers.':'.');
+ el('chart').replaceChildren();
+ c.rows.forEach(([name,size])=>{const li=document.createElement('li'),label=document.createElement('strong'),marks=document.createElement('span');label.textContent=name;marks.className='marks';marks.setAttribute('role','img');marks.setAttribute('aria-label',size+' squares');
+ for(let i=0;i<Math.ceil(size);i++){const mark=document.createElement('span');mark.className=i+1>size?'mark half':'mark';marks.append(mark)}li.append(label,marks);el('chart').append(li)});
+ el('question').textContent=q[0];el('answer').value='';el('answer').disabled=false;el('form').hidden=false;el('check').disabled=false;el('feedback').textContent='';el('show').hidden=false;el('next').hidden=true;el('next').textContent=turn===5?'Finish practice':'Next question';el('chart').hidden=false;el('key').hidden=false;
+}
+function finish(correct){if(locked)return;locked=true;if(correct&&!tried)first++;const q=charts[Math.floor(turn/2)].qs[turn%2];el('feedback').textContent=(correct?'Correct. ':'Answer shown. ')+q[2];el('answer').disabled=true;el('check').disabled=true;el('show').hidden=true;el('next').hidden=false;el('next').focus();}
+el('form').onsubmit=e=>{e.preventDefault();if(locked)return;const q=charts[Math.floor(turn/2)].qs[turn%2];if(el('answer').valueAsNumber===q[1]){finish(true);return;}tried=true;el('feedback').textContent='Try again. Count the squares for the row or rows in the question, then use this chart’s key.';el('answer').select();};
+el('show').onclick=()=>finish(false);
+el('next').onclick=()=>{
+ if(turn===6){turn=first=0;draw();}
+ else if(++turn===6){el('progress').textContent='Three charts complete';el('title').textContent='Picture graph practice';el('key').hidden=el('chart').hidden=el('form').hidden=true;el('question').textContent='Correct on the first try: '+first+' of 6.';el('feedback').textContent='';el('next').textContent='Play again';}
+ else draw();el('title').focus();
+};
+draw();
+</script></main></body></html>

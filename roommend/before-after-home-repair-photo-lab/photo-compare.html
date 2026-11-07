@@ -1,0 +1,44 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,follow"><meta name="description" content="Place two home repair photos in the same frame and slide a divider to compare visible details. Photos stay in this browser."><meta http-equiv="Content-Security-Policy" content="connect-src 'none'; img-src 'self' blob: data:"><link rel="canonical" href="https://udrwu9c0tjuedqy2.github.io/hla-home/roommend/before-after-home-repair-photo-lab/photo-compare.html"><title>Compare two repair photos | RoomMend</title>
+<style>*{box-sizing:border-box}body{margin:0;background:#f6f3ea;color:#213b37;font:17px/1.5 system-ui,sans-serif}main{max-width:880px;margin:auto;padding:22px clamp(16px,4vw,40px) 45px}a{color:#1b655a}h1{font:700 clamp(2.3rem,7vw,4rem)/1 Georgia,serif;letter-spacing:-.05em;margin:1.7rem 0 .8rem}p{max-width:65ch}fieldset{border:1px solid #a5b6a9;background:#fffdf8;border-radius:.7rem;padding:1rem;min-width:0}.files{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(210px,100%),1fr));gap:.8rem}label{display:block;font-weight:700}input{font:inherit;width:100%;min-width:0;min-height:44px}input[type=file]{font-size:.85rem;margin-top:.35rem}.preview{position:relative;aspect-ratio:4/3;background:#192e30;overflow:hidden;border-radius:10px;margin:.9rem 0}.layer{display:grid;place-items:center;position:absolute;inset:0;background:#192e30}.layer img,.layer svg{width:100%;height:100%;object-fit:contain}.divider{position:absolute;top:0;bottom:0;border-left:3px solid #ffd55b;pointer-events:none}.buttons{display:flex;flex-wrap:wrap;gap:.5rem;margin:.6rem 0}button,.cta{font:650 1rem system-ui;min-height:44px;border:1px solid #22584b;border-radius:5px;padding:.55rem .8rem;background:white;color:#235449;cursor:pointer}.cta{display:inline-block;background:#235449;color:white;text-decoration:none}button:focus-visible,input:focus-visible,a:focus-visible{outline:3px solid #b16017;outline-offset:2px}.hint{font-size:.9rem}#feedback{min-height:1.5em}.tag{display:inline-block;max-width:100%;overflow-wrap:anywhere}footer{border-top:1px solid #b9c4b9;margin-top:1.5rem;padding-top:1rem}@media print{.preview,.files,.buttons,input{display:none}}</style></head><body><main><a href="./">← Repair photo shot guide</a><h1>Compare two repair photos.</h1><p>Line up a fixed detail such as a door frame, then move the divider to compare the same spot before and after. The example uses two drawings of a cabinet handle.</p>
+<fieldset class="files"><legend>Your photo pair</legend><label>Before<input id="before" type="file" accept="image/jpeg,image/png,image/webp"></label><label>After<input id="after" type="file" accept="image/jpeg,image/png,image/webp"></label></fieldset>
+<p class="hint">Choose JPEG, PNG or WebP files up to 12 MB each. The page reads them on this device. Use two photos taken from the same spot; different angles or lighting can make changes look larger or smaller.</p>
+<div class="preview" role="img" id="preview" aria-label="Before and after example cabinet drawings"><div class="layer" id="beforeLayer"></div><div class="layer" id="afterLayer"></div><div class="divider" id="divider"></div></div>
+<label for="position">Compare the same frame · <span id="percent"></span></label><input id="position" type="range" min="0" max="100" value="50">
+<div class="buttons"><button id="justBefore">Before only</button><button id="half">Split view</button><button id="justAfter">After only</button><button id="clear">Clear photos</button></div>
+<p id="feedback" role="status"></p><p class="hint">Before is on the left, after on the right. Each full photo is fitted without cropping. Compare appearance only; a photo cannot establish repair quality or safety.</p>
+<footer><p>RoomMend helps organize household projects and their photo records.</p><a class="cta" href="https://apps.apple.com/us/app/roommend-safer-home-plans/id6820106548">View RoomMend on the App Store</a><p class="hint">Published by Honest Little Apps.</p></footer>
+<script>
+const el=id=>document.getElementById(id);
+const states={before:{url:null,version:0,custom:false},after:{url:null,version:0,custom:false}};
+function sample(side){
+ const after=side==='after';
+ return '<svg viewBox="0 0 480 360" aria-hidden="true"><rect width="480" height="360" fill="#dde3d2"/><rect x="80" y="50" width="320" height="250" rx="4" fill="#bec9af" stroke="#56715d" stroke-width="5"/><rect x="96" y="67" width="288" height="216" fill="#e0e1c6" stroke="#879782" stroke-width="2"/><path d="M160 253H320 M160 105H320" stroke="#c4c8aa" stroke-width="3"/><g transform="rotate('+(after?0:16)+' 240 166)"><path d="M201 173V157H279V173" fill="none" stroke="#493b31" stroke-width="10" stroke-linecap="round"/></g></svg>';
+}
+function wipe(){const x=+el('position').value;el('afterLayer').style.clipPath='inset(0 0 0 '+x+'%)';el('divider').style.left=x+'%';el('divider').hidden=x===0||x===100;el('percent').textContent=x+'% before';el('position').setAttribute('aria-valuetext',x+' percent before');}
+function removeImage(side){
+ const s=states[side];s.version++;if(s.url)URL.revokeObjectURL(s.url);s.url=null;s.custom=false;
+ el(side+'Layer').innerHTML=sample(side);
+}
+function updateDescription(){
+ const desc=side=>states[side].custom?'selected photo':'example drawing';
+ el('preview').setAttribute('aria-label','Before: '+desc('before')+'; after: '+desc('after'));
+}
+async function load(side,file){
+ if(!file)return;
+ const state=states[side],version=++state.version;
+ if(!['image/jpeg','image/png','image/webp'].includes(file.type)||file.size>12*1024*1024){
+  el(side).value='';el('feedback').textContent='Choose a JPEG, PNG or WebP file no larger than 12 MB. The previous view is still shown.';return;
+ }
+ const url=URL.createObjectURL(file),img=new Image();img.alt=side+' photo';
+ try{img.src=url;await img.decode();
+  if(version!==state.version){URL.revokeObjectURL(url);return;}
+  const old=state.url;state.url=url;state.custom=true;el(side+'Layer').replaceChildren(img);if(old)URL.revokeObjectURL(old);
+  updateDescription();el('feedback').textContent=(side==='before'?'Before':'After')+' photo loaded on this device.';
+ }catch{URL.revokeObjectURL(url);if(version===state.version){el(side).value='';el('feedback').textContent='This image could not be opened. The previous view is still shown.';}}
+}
+for(const side of ['before','after']){removeImage(side);el(side).addEventListener('change',()=>load(side,el(side).files[0]));}
+el('position').oninput=wipe;
+for(const [id,x] of [['justBefore',100],['half',50],['justAfter',0]])el(id).onclick=()=>{el('position').value=x;wipe();};
+el('clear').onclick=()=>{for(const side of ['before','after']){removeImage(side);el(side).value='';}el('position').value=50;wipe();updateDescription();el('feedback').textContent='Photos cleared. Both example drawings are showing.';};
+updateDescription();wipe();
+</script></main></body></html>
